@@ -22,6 +22,7 @@ urlpatterns = [
     path('olxproducts/',OLX.api_views.ItemList.as_view()),
     path('olxproducts/create/',OLX.api_views.ItemCreate.as_view()),
     path('olxproducts/<int:id>/',OLX.api_views.ItemRetrieveUpdateDestroy.as_view()),
+    path('olxproducts/custom/',OLX.api_views.customAPI.as_view()),
 ]
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
